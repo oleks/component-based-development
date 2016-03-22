@@ -40,7 +40,7 @@
 BASENAME="master"
 
 # Optional, the name of the output file.
-JOBNAME="su16-$(basename $(dirname $(pwd)))"
+JOBNAME="$(basename $(dirname $(pwd)))"
 
 if [ -z $BASENAME ]; then BASENAME="${1%.*}"; fi
 if [ -z $BASENAME ]; then BASENAME="root"; fi
