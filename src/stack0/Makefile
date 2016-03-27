@@ -10,6 +10,6 @@ stack%.o: stack.h stack.c
 		-c stack.c
 
 clean:
-	rm *.o
+	rm -f *.o
 
 .PHONY: all clean
