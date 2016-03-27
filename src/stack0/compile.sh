@@ -10,5 +10,7 @@ fi
 CC=gcc
 CFLAGS=(-Werror -Wextra -Wall -pedantic -std=c11)
 
-${CC} ${CFLAGS} -DSTACK_SIZE=${STACK_SIZE} \
-  -c stack.c -o stack${STACK_SIZE}.o
+${CC} ${CFLAGS} \
+  -DSTACK_SIZE=${STACK_SIZE} \
+  -o stack${STACK_SIZE}.o \
+  -c stack.c
