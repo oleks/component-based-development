@@ -1,5 +1,5 @@
-#ifndef STACK0_H
-#define STACK0_H
+#ifndef STACK_H
+#define STACK_H
 
 #define STACK_OVERFLOW  (-1)
 #define STACK_UNDERFLOW (-2)
@@ -10,4 +10,4 @@ stack_push(int value);
 int
 stack_pop(int *value);
 
-#endif // STACK0_H
+#endif // STACK_H
