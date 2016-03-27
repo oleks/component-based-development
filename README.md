@@ -1,4 +1,4 @@
-# Component-Based Development — Software Development 2016
+# Components — Software Development 2016
 
 [Lecture slides](slides/output/su16-component-based-development.pdf) and
 [source code](src) from the lecture on Component-Based Development given for
