@@ -1,7 +1,7 @@
 CC=gcc
 CFLAGS=-Werror -Wextra -Wall -pedantic -std=c11
 
-all: stack10.o stack100.o stack1000.o
+all: stack10.o stack100.o stack1000.o # ...
 
 stack%.o: stack.h stack.c
 	$(CC) $(CFLAGS) \
