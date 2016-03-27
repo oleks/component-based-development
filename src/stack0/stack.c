@@ -25,7 +25,6 @@ stack_pop(int *value) {
   }
 
   *value = STACK.values[STACK.count--];
-  STACK.count--;
 
   return 0;
 }
