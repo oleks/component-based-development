@@ -14,7 +14,6 @@ stack_push(int value) {
   }
 
   STACK.values[STACK.count++] = value;
-
   return 0;
 }
 
@@ -25,6 +24,5 @@ stack_pop(int *value) {
   }
 
   *value = STACK.values[STACK.count--];
-
   return 0;
 }
