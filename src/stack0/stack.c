@@ -1,6 +1,6 @@
-#include <stddef.h> // size_t
-
 #include "stack.h"
+
+#include <stddef.h> // size_t
 
 struct stack {
   int values[STACK_SIZE];
