@@ -8,6 +8,7 @@
 int
 stack_push(int value);
 
+// @param value Assumed to point to memory we can write to.
 // @return 0 on success; STACK_UNDERFLOW if stack is empty.
 int
 stack_pop(int *value);
