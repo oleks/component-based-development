@@ -1,0 +1,105 @@
+\begin{frame}
+
+\begin{center}
+
+\Huge \textbf{DEMO}
+
+\bigskip
+
+\large Compile-time parametrized stack
+
+\end{center}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+
+\frametitle{C Header File --- The Interface}
+
+\lstinputlisting[language=C]{../src/stack0/stack.h}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+
+\frametitle{A Statically-Allocated Stack}
+
+\begin{center}
+
+A statically-allocated variable is allocated at program start-up and lives
+until the program terminates.
+
+\end{center}
+
+\pause
+
+\vspace{\fill}
+
+\lstinputlisting%
+  [language=C, linerange={1-8}]%
+  {../src/stack0/stack.c}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+
+\frametitle{Push}
+
+\lstinputlisting%
+  [language=C, linerange={10-20}, firstnumber=10]%
+  {../src/stack0/stack.c}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+
+\frametitle{Pop}
+
+\lstinputlisting%
+  [language=C, firstline=21, firstnumber=21]%
+  {../src/stack0/stack.c}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+
+\frametitle{A Little Makefile Magic\ldots}
+
+\lstinputlisting[language=make]{../src/stack0/Makefile}
+
+\end{frame}
+
+
+
+\begin{frame}
+
+\frametitle{Distribution}
+
+\begin{itemize}
+
+\item Distribute pre-compiled ``object-code'' i.e., \texttt{stack.h} and
+\texttt{stack10.o}, \texttt{stack100.o}, \texttt{stack1000.o}, etc.
+
+\begin{itemize}
+
+\item Ask for higher price for bigger stacks --- profit.
+
+\end{itemize}
+
+\item Distribute source code with documentation and build instructions i.e.,
+\texttt{Makefile}, \texttt{stack.h}, and \texttt{stack.c}.
+
+\begin{itemize}
+
+\item Feel altruistic/philanthropic, gather street-cred.
+
+\end{itemize}
+
+\end{itemize}
+
+\end{frame}
