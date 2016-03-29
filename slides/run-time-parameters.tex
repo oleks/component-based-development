@@ -13,17 +13,100 @@
 \end{frame}
 
 
+\begin{frame}[fragile]
+
+\frametitle{A User-Allocated Stack}
+
+\begin{center}
+
+A user-allocated variable is allocated by the user of a library; the library
+relies on pointers to well-allocated space.
+
+\end{center}
+
+\pause
+
+\vspace{\fill}
+
+\lstinputlisting%
+  [language=C, linerange={4-10}, firstnumber=4]%
+  {../src/user-stack/stack.h}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+
+\frametitle{Initialization}
+
+\begin{center}
+
+User should allocate space for, but not initialize the stack.
+
+\end{center}
+
+\lstinputlisting%
+  [language=C, linerange={3-8}, firstnumber=3]%
+  {../src/user-stack/stack.c}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+
+\frametitle{Push}
+
+\lstinputlisting%
+  [language=C, linerange={10-19}, firstnumber=10]%
+  {../src/user-stack/stack.c}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+
+\frametitle{Pop}
+
+\lstinputlisting%
+  [language=C, linerange={21-30}, firstnumber=21]%
+  {../src/user-stack/stack.c}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+
+\frametitle{A Bit Less Makefile Magic\ldots}
+
+\lstinputlisting%
+  [language=make, linerange={1-14}]%
+  {../src/user-stack/Makefile}
+
+\end{frame}
+
+
 \begin{frame}
 
 \frametitle{Distribution}
 
 \begin{itemize}
 
-\item Distribute pre-compiled ``object-code'' i.e., \texttt{stack.h} and
-\texttt{stack.o}.
+\item Distribute object code i.e., \texttt{stack.h} and \texttt{stack.o}.
 
-\item Distribute source code with docs and build instrutioctions i.e.,
-\texttt{compile.sh}, \texttt{stack.h}, and \texttt{stack.c}.
+\begin{itemize}
+
+\item Lower price, better product --- profit.
+
+\end{itemize}
+
+\item Distribute source code with documentation and build instructions i.e.,
+\texttt{Makefile}, \texttt{stack.h}, and \texttt{stack.c}.
+
+\begin{itemize}
+
+\item Feel altruistic/philanthropic, gather street-cred.
+
+\end{itemize}
 
 \end{itemize}
 
