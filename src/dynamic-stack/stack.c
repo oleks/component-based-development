@@ -5,15 +5,13 @@
 struct stack *
 stack_new(size_t size) {
   struct stack *stack;
-  int *values;
 
   stack = (struct stack *)malloc(sizeof(struct stack));
   if (stack == NULL) return NULL;
 
-  values = (int *)malloc(sizeof(int) * size);
-  if (values == NULL) return NULL;
+  stack->values = (int *)malloc(sizeof(int) * size);
+  if (stack->values == NULL) return NULL;
 
-  stack->values = values;
   stack->count = 0;
   stack->size = size;
 
