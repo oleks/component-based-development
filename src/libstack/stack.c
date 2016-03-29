@@ -1,1 +1,1 @@
-../stack0/stack.c
+../00-static-stack/stack.c

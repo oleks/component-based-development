@@ -13,7 +13,8 @@ stack_push(int value) {
     return STACK_OVERFLOW;
   }
 
-  STACK.values[STACK.count++] = value;
+  STACK.values[STACK.count] = value;
+  STACK.count += 1;
   return 0;
 }
 
@@ -23,6 +24,7 @@ stack_pop(int *value) {
     return STACK_UNDERFLOW;
   }
 
-  *value = STACK.values[--STACK.count];
+  STACK.count -= 1;
+  *value = STACK.values[STACK.count];
   return 0;
 }
