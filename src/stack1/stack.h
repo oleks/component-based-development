@@ -3,14 +3,14 @@
 
 #include <stddef.h> // size_t
 
-#define STACK_OVERFLOW  (-1)
-#define STACK_UNDERFLOW (-2)
-
 struct stack {
   int *values;
   size_t count;
   size_t size;
 };
+
+#define STACK_OVERFLOW  (-1)
+#define STACK_UNDERFLOW (-2)
 
 // Should be called before all other stack-related functions with the pointer
 // that later will be used in stack-related functions.
