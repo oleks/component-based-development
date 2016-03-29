@@ -1,4 +1,4 @@
-export LD_LIBRARY_PATH := ../libstack:$(LD_LIBRARY_PATH)
+export LD_LIBRARY_PATH := ../static-libstack:$(LD_LIBRARY_PATH)
 
 all: calc.exe
 	mono calc.exe
