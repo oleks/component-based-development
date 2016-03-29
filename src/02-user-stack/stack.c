@@ -13,7 +13,8 @@ stack_push(struct stack *stack, int value) {
     return STACK_OVERFLOW;
   }
 
-  stack->values[stack->count++] = value;
+  stack->values[stack->count] = value;
+  stack->count += 1;
   return 0;
 }
 
@@ -23,6 +24,7 @@ stack_pop(struct stack *stack, int *value) {
     return STACK_UNDERFLOW;
   }
 
-  *value = stack->values[--stack->count];
+  stack->count -= 1;
+  *value = stack->values[stack->count];
   return 0;
 }
