@@ -23,6 +23,6 @@ stack_pop(struct stack *stack, int *value) {
     return STACK_UNDERFLOW;
   }
 
-  *value = stack->values[stack->count--];
+  *value = stack->values[--stack->count];
   return 0;
 }

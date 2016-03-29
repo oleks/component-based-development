@@ -23,6 +23,6 @@ stack_pop(int *value) {
     return STACK_UNDERFLOW;
   }
 
-  *value = STACK.values[STACK.count--];
+  *value = STACK.values[--STACK.count];
   return 0;
 }
